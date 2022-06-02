@@ -8,13 +8,4 @@ dependencies {
     implementation(compose.desktop.currentOs)
 }
 
-compose.desktop {
-    application {
-        mainClass = "com.medium.MainKt"
-
-        nativeDistributions {
-            packageName = "medium"
-            packageVersion = "1.00.00"
-        }
-    }
-}
+compose.desktop.application.mainClass = "com.medium.MainKt"
